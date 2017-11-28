@@ -1,18 +1,300 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Session 11</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <div class="app container my-5">
-      <h1>Hello world</h1>
-      <p>Happy {{ day }}! It's {{ now.getHours() }}:{{ now.getMinutes() }}.</p>
-    </div>
+      <!DOCTYPE html>
+      <html lang="en" >
+      <head>
+        <meta charset="UTF-8">
+        <title>Lafarge en Syrie</title>
+        
+        
+        <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+      </head>
 
-    <script src="vendors/vue.min.js"></script>
-    <script src="index.js"></script>
-  </body>
-</html>
+      <body>
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav navbar-right btn-nav">
+              <li class="page-scroll">
+               <a href="#chapo" class="btn-nav">Haut de page</a> 
+             </li>
+             <li class="page-scroll">
+              <a href="#timeline" class="btn-nav">Chronologie</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#dossier" class="btn-nav">Pour aller plus loin...</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <header id="chapo">
+      <div class="header-gradient"></div>
+      <img class="header-img" alt="Usine Lafarge en Syrie" src="img/usine-syrie-lafarge.jpeg">
+
+      <div class="header-div">
+        <h1>
+          du ciment à tout prix : <br/> l'affaire lafarge en syrie <br/> en 12 dates
+        </h1>
+
+        <hr class="header-hr">
+
+        <p class="p-header">500.000 dollars. C’est la somme qu’aurait versé Lafarge à l’Etat islamique. Depuis l’été 2016, le cimentier est dans la tourmente. Les révélations s’enchaînent et les procédures judiciaires se poursuivent. Retour sur un an et demi de crise.</p>
+
+      </div>
+    </div>
+  </header>
+
+
+  <section class="timeline" id="timeline">
+
+    <div class="container">
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInLeft">
+          <div class="timeline-img-header"></div>
+          <h2 class="titreimg">Le scandale éclate, révélé par Le Monde</h2>
+          <div class="date">21 Juin 2016</div>
+          <p>Dans son enquête, Le Monde met en lumière de “troubles arrangements” entre Lafarge Cement Syrie, la branche syrienne du groupe français, et l'organisation État islamique, qui gagnait alors du terrain et devenait incontournable dans la région. La cimenterie Lafarge implantée à Jalabiya, dans le nord-est de la Syrie, se serait approvisionnée et aurait payé des taxes à l’EI, entre 2013 et 2014, pour continuer de fonctionner pendant la guerre. Le numéro un mondial du ciment a payé au prix fort le passage de ses camions aux checkpoints djihadistes et leur a versé des taxes sur le pétrole et les matières premières. </p>
+          <a class="bnt-more" href="http://www.lemonde.fr/syrie/article/2016/06/21/syrie-les-troubles-arrangements-de-lafarge-avec-l-etat-islamique_4955023_1618247.html">More</a>
+        </div>
+      </div>  
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>Le gouvernement français saisit la justice</h2>
+          <div class="date">Fin septembre 2016</div>
+          <p>Le ministère de l’Économie dépose plainte au parquet de Paris pour de possibles infractions commises par le cimentier français Lafarge, qui a fait fonctionner une usine en Syrie malgré des interdictions européennes. La plainte de Bercy déclenche l'ouverture d'une enquête préliminaire, confiée au Service national de douane judiciaire. Elle porte précisément sur une interdiction d'acheter du pétrole dans ce pays, édictée par l'Union européenne en 2012 dans le cadre d'une série de sanctions contre le régime de Bachar al-Assad.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/syrie/article/2017/01/19/bercy-a-saisi-la-justice-au-sujet-des-activites-de-lafarge-en-syrie_5065540_1618247.html">More</a>
+        </div>
+      </div> 
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInLeft">
+          <div class="timeline-img-header"></div>
+          <h2 class="titreimg">Sherpa porte plainte contre Lafarge pour financement du terrorisme en Syrie</h2>
+          <div class="date">15 novembre 2016</div>
+          <p>L’ONG française Sherpa de défense des victimes de crimes économiques dépose plainte contre le cimentier franco-suisse LafargeHolcim pour “financement du terrorisme”, “complicité de crimes contre l'humanité”, “complicité de crimes de guerre”, “mise en danger d'autrui” et d'autres infractions connexes.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/syrie/article/2016/11/15/l-ong-sherpa-porte-plainte-contre-lafarge-pour-financement-du-terrorisme_5031474_1618247.html">More</a>
+        </div>
+      </div> 
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>LafargeHolcim reconnaît des arrangements “inacceptables”</h2>
+          <div class="date">2 mars 2017</div>
+          <p>Le groupe confirme les révélations publiées par Le Monde, sans préciser quels groupes armés il avait contribué à financer.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/proche-orient/article/2017/03/02/syrie-lafargeholcim-reconnait-que-son-usine-a-finance-des-groupes-armes_5087906_3218.html ">More</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInLeft">
+          <div class="timeline-img-header"></div>
+          <h2 class="titreimg">Le patron de Lafarge sur la sellette</h2>
+          <div class="date">12 avril 2017</div>
+          <p>C’est l’heure de règlements de comptes chez Lafarge Holcim, depuis le scandale des financements à l’EI, mais aussi depuis la révélation que le groupe aurait envisagé de bâtir le mur voulu par Trump à la frontière mexicaine. Eric Olsen, le patron, a tout de même tenu bon. Une nouvelle réunion du conseil d’administration est attendue.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/economie/article/2017/04/13/reglements-de-comptes-chez-lafargeholcim_5110498_3234.html">More</a>
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>LafargeHolcim écarte brutalement son patron</h2>
+          <div class="date">24 avril 2017</div>
+          <p>Eric Olsen a perdu son combat. Après des semaines de résistance, le patron de LafargeHolcim s'est résolu à quitter le numéro un mondial du ciment, sous la pression de son conseil d'administration. Il abandonnera ses fonctions le 15 juillet, et sera provi- soirement remplacé par l'actuel pré- sident du conseil, Beat Hess, le temps qu'un successeur lui soit trouvé.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/economie/article/2017/04/23/activites-de-lafarge-en-syrie-le-patron-sur-le-point-de-demissionner_5115900_3234.html">More</a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInLeft">
+          <h2>Ouverture d’une information judiciaire sur Lafarge Syrie</h2>
+          <div class="date">9 juin 2017</div>
+          <p>Cette information judiciaire est ouverte pour “financement d’entreprise terroriste” et “mise en danger de la vie d’autrui”. Elle devra notamment éclaircir un point : où est passé le ciment syrien de Lafarge ?</p>
+          <a class="bnt-more" href="https://www.lesechos.fr/14/06/2017/LesEchos/22465-083-ECH_ouverture-d-une-information-judiciaire-sur-lafarge-syrie.htm">More</a>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header"></div>
+          <h2 class="titreimg">Les activités de Lafarge en Syrie, appuyées par la diplomatie française</h2>
+          <div class="date">20 septembre 2017</div>
+          <p>C’est une révélation du Canard Enchaîné cette fois. Des responsables du cimentier ont reconnu devant les enquêteurs que des sommes avaient été versées à l'Etat islamique. Ils affirment que la diplomatie française, notamment le Quai d’Orsay, a appuyé leur décision de rester en Syrie.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/international/article/2017/09/20/ce-que-revele-l-enquete-judiciaire-sur-les-agissements-du-cimentier-lafarge-en-syrie_5188546_3210.html">More</a>
+        </div>
+
+      </div>  
+
+      
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInLeft">
+          <div class="timeline-img-header"></div>
+          <h2 class="titreimg">L'enquête des douanes judiciaires met en cause l'ex-PDG du groupe Lafarge mais aussi le patron de la sûreté</h2>
+          <div class="date">22 septembre 2017</div>
+          <a class="bnt-more" href="http://www.lemonde.fr/societe/article/2017/09/22/lafarge-en-syrie-questions-autour-des-responsables_5189547_3224.html">More</a>
+        </div>
+
+      </div>  
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>Le Quai d'Orsay visé dans l'affaire Lafarge</h2>
+          <div class="date">11 octobre 2017</div>
+          <p>L’ONG Sherpa, qui s'est constituée partie civile afin de défendre les ex-salariés syriens de Lafarge, demande l'audition de deux ambassadeurs de France pour la Syrie et de l'ex-ministre des affaires étrangères, Laurent Fabius, qui préside désormais le Conseil constitutionnel.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/proche-orient/article/2017/10/13/le-quai-d-orsay-vise-dans-l-affaire-lafarge_5200793_3218.html">More</a>
+        </div>
+      </div>
+
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-img"></div>
+
+        <div class="timeline-content timeline-card js--fadeInLeft">
+          <div class="timeline-img-header"></div>
+          <h2 class="titreimg">Des perquisitions au siège de Lafarge à Paris</h2>
+          <div class="date">14 novembre 2017</div>
+          <p>C’est une information France Inter. Les perquisitions ont aussi été faites chez des cadres du groupe. Le parquet belge a annoncé que, dans le cadre d’une équipe commune d’enquête franco-belge, la police judiciaire fédérale de Bruxelles a procédé à une perquisition à Bruxelles, simultanément à celles effectuées en France.</p>
+          <a class="bnt-more" href="</p>
+            <a class="bnt-more" href="https://www.francetvinfo.fr/monde/proche-orient/offensive-jihadiste-en-irak/lafarge-en-syrie-des-perquisitions-en-cours-au-siege-du-groupe-a-paris-dans-l-enquete-pour-financement-du-terrorisme_2467530.html">More</a>
+          </div>
+
+        </div> 
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content timeline-card js--fadeInRight">
+            <div class="timeline-img-header"></div>
+            <h2 class="titreimg">500.000 dollars</h2>
+            <div class="date">22 novembre 2017</div>
+            <p>La filiale syrienne du cimentier Lafarge aurait versé plus de 500.000 dollars à l’organisation de l’Etat islamique entre juillet 2012 et septembre 2014, rapporte Le Canard enchaîné, citant un rapport rédigé à la demande du groupe par le cabinet américain Baker McKenzie en avril.</p>
+            <a class="bnt-more" href="https://tempsreel.nouvelobs.com/monde/guerre-en-syrie/20171121.OBS7637/lafarge-a-verse-plus-de-500-000-dollars-a-daech.html">More</a>
+          </div>
+
+        </div>     
+
+      </div>
+    </section>
+
+
+
+
+    <section id="dossier">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="h2-dossier">Pour aller plus loin...</h2>
+            <hr class="hr-dossier">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="https://www.marianne.net/societe/revelations-comment-lafarge-composait-avec-daech-en-syrie" class="hvrbox" data-toggle="modal" >
+              <img src="img/plusloin1.png" class="img-responsive hvrbox-layer_bottom" alt="">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">
+                  Révélations - Comment Lafarge composait avec Daech en Syrie <br/><em>Marianne</em>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="http://www.slate.fr/story/153047/mysteres-cimenterie-lafarge-syrie" class="hvrbox" data-toggle="modal">
+              <img src="img/LH.png" class="img-responsive hvrbox-layer_bottom" alt="">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">
+                  Les mystères de la cimenterie Lafarge en Syrie <br/><em>Slate</em>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="https://www.francetvinfo.fr/monde/revolte-en-syrie/business-detournement-de-materiels-arrangements-les-consequences-de-l-embargo-sur-la-syrie_2485189.html" class="hvrbox" data-toggle="modal">
+              <img src="img/syrie3.jpg" class="img-responsive hvrbox-layer_bottom" alt="">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">
+                  Business, détournement de matériels, arrangements… les conséquences de l'embargo sur la Syrie <br/><em>FranceInfo</em>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3 class="h3-cote">Elise Denjean</h3>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3 class="h3-milieu">Initiation au code</h3>
+              <h4>Semestre d'automne 2017-2018</h4>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3 class="h3-cote">Sciences Po Paris</h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+      <script  src="js/index.js"></script>
+
+
+    </body>
+    </html>
